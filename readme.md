@@ -1,1 +1,1 @@
-REPOSITORIO CRIADO COM O INTUITO DE ARMAZENAR EXERCICIOS E PROJETOS CRIADOS NA DISCIPLINA DE LINGUAGEM DE PROGRAMA«√O III
+Reposit√≥rio criado com o intuito de armazenar exercicios e projeto criados na disciplina de linguagem de programa√ß√£o III. 
