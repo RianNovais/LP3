@@ -1,1 +1,1 @@
-REPOSITORIO CRIADO COM O INTUITO DE ARMAZENAR EXERCICIOS E PROJETOS CRIADOS NA DISCIPLINA DE LINGUAGEM DE PROGRAMA«√O III
+Repositorio criado com o intuito de armazenar exercicios e projetos instru√≠dos pelo docente Iklenio Lima, na disciplina Linguagem de Programa√ß√£o III.
