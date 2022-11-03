@@ -19,8 +19,9 @@ namespace ListaExercicios3
 
         }
 
-        private void buttonConversao_Click(object sender, EventArgs e)
-        {
+        private void buttonConversao_Click(object sender, EventArgs e){
+            FormConversao formConversao = new FormConversao();
+            formConversao.Show();
 
         }
 

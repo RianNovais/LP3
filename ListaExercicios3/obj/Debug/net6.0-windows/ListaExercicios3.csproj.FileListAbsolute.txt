@@ -19,5 +19,7 @@ C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-
 C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.formMultiplos.resources
 C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.FormVotacao.resources
 C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.Properties.Resources.resources
-C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.FormMostrarMut.resources
 C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.FormResultadoVot.resources
+C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.FormMostrarMut.resources
+C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.FormConversao.resources
+C:\Users\Maste\OneDrive\Área de Trabalho\LP3\ListaExercicios3\obj\Debug\net6.0-windows\ListaExercicios3.FormMostrarGraus.resources

@@ -18,6 +18,9 @@ namespace ListaExercicios3
         int voto4 = 0;
         int votoB = 0;
         int votoN = 0;
+        int totalV = 0;
+        double porcB = 0;
+        double porcN = 0;
 
         public FormVotacao()
         {
@@ -52,7 +55,8 @@ namespace ListaExercicios3
 
         }
             private void btFinalizar_Click(object sender, EventArgs e){
-            FormResultadoVot formRes = new FormResultadoVot(voto1, voto2, voto3, voto4, votoB, votoN); //);
+            FormResultadoVot formRes = new FormResultadoVot(voto1, voto2, voto3, voto4, votoB, votoN, totalV, porcB, porcN); //);
+            this.Close();
             formRes.Show();
 
 

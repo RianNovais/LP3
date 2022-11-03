@@ -1,6 +1,6 @@
 ﻿namespace ListaExercicios3
 {
-    partial class formMultiplos
+    partial class FormMostrarGraus
     {
         /// <summary>
         /// Required designer variable.
@@ -28,50 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.textBoxGraus = new System.Windows.Forms.TextBox();
+            this.textBoxGrausC = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.buttonMostrarMultiplos = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // textBoxGraus
+            // 
+            this.textBoxGraus.Location = new System.Drawing.Point(94, 63);
+            this.textBoxGraus.Multiline = true;
+            this.textBoxGraus.Name = "textBoxGraus";
+            this.textBoxGraus.Size = new System.Drawing.Size(43, 260);
+            this.textBoxGraus.TabIndex = 0;
+            // 
+            // textBoxGrausC
+            // 
+            this.textBoxGrausC.Location = new System.Drawing.Point(156, 63);
+            this.textBoxGrausC.Multiline = true;
+            this.textBoxGrausC.Name = "textBoxGrausC";
+            this.textBoxGrausC.Size = new System.Drawing.Size(76, 260);
+            this.textBoxGrausC.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(30, 71);
+            this.label1.Location = new System.Drawing.Point(84, 45);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(233, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "informar todos os múltiplos de 17 ou de 31";
+            this.label1.Size = new System.Drawing.Size(63, 15);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Fahrenheit";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(30, 95);
+            this.label2.Location = new System.Drawing.Point(156, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(143, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "no intervalo de 500 a 1000";
+            this.label2.Size = new System.Drawing.Size(44, 15);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Celsius";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // buttonMostrarMultiplos
-            // 
-            this.buttonMostrarMultiplos.Location = new System.Drawing.Point(184, 184);
-            this.buttonMostrarMultiplos.Name = "buttonMostrarMultiplos";
-            this.buttonMostrarMultiplos.Size = new System.Drawing.Size(75, 23);
-            this.buttonMostrarMultiplos.TabIndex = 2;
-            this.buttonMostrarMultiplos.Text = "Mostrar";
-            this.buttonMostrarMultiplos.UseVisualStyleBackColor = true;
-            this.buttonMostrarMultiplos.Click += new System.EventHandler(this.buttonMostrarMultiplos_Click);
-            // 
-            // formMultiplos
+            // FormMostrarGraus
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(486, 459);
-            this.Controls.Add(this.buttonMostrarMultiplos);
+            this.ClientSize = new System.Drawing.Size(559, 450);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "formMultiplos";
+            this.Controls.Add(this.textBoxGrausC);
+            this.Controls.Add(this.textBoxGraus);
+            this.Name = "FormMostrarGraus";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Multiplos";
+            this.Text = "ConversorDeGraus";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,8 +88,10 @@
 
         #endregion
 
+        private TextBox textBoxGraus;
+        private TextBox textBox1;
         private Label label1;
         private Label label2;
-        private Button buttonMostrarMultiplos;
+        private TextBox textBoxGrausC;
     }
 }

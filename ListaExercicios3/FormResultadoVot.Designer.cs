@@ -50,9 +50,10 @@
             this.label1.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(169, 41);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 25);
+            this.label1.Size = new System.Drawing.Size(247, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "RESULTADO ELEIÇÕES";
+            this.label1.Text = "RELATÓRIO DE RESULTADOS ";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label2
             // 
@@ -123,7 +124,7 @@
             this.button1.Image = global::ListaExercicios3.Properties.Resources._20190110134024718594a;
             this.button1.Location = new System.Drawing.Point(43, 149);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(95, 96);
+            this.button1.Size = new System.Drawing.Size(88, 96);
             this.button1.TabIndex = 8;
             this.button1.UseVisualStyleBackColor = true;
             // 
@@ -132,7 +133,7 @@
             this.button2.Image = global::ListaExercicios3.Properties.Resources.Ciro_Gomes__cropped_;
             this.button2.Location = new System.Drawing.Point(316, 149);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(95, 96);
+            this.button2.Size = new System.Drawing.Size(83, 96);
             this.button2.TabIndex = 9;
             this.button2.UseVisualStyleBackColor = true;
             // 
@@ -193,7 +194,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FormResultadoVot";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FormResultadoVot";
+            this.Text = "RelatorioVotação";
             this.ResumeLayout(false);
             this.PerformLayout();
 

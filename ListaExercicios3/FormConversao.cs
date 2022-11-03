@@ -10,19 +10,17 @@ using System.Windows.Forms;
 
 namespace ListaExercicios3
 {
-    public partial class formMultiplos : Form
+    public partial class FormConversao : Form
     {
-       
-        public formMultiplos()
+        public FormConversao()
         {
             InitializeComponent();
         }
 
-        private void buttonMostrarMultiplos_Click(object sender, EventArgs e){
-            FormMostrarMut formMut = new FormMostrarMut();
-            formMut.Show();
+        private void btMostrarGraus_Click(object sender, EventArgs e){
+            FormMostrarGraus formMostrarGraus = new FormMostrarGraus();
+            formMostrarGraus.Show();
             this.Close();
-            
 
         }
     }

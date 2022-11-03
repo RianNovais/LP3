@@ -21,7 +21,7 @@ namespace ListaExercicios3
             try{
                 int n = Convert.ToInt32(BoxNFat.Text);
                 int fat = 1;
-                for (int i = 2; i <= n; i++)
+                for (int i = 1; i <= n; i++)
                 {
                     fat = fat * i;
 
