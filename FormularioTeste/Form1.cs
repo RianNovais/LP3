@@ -29,7 +29,7 @@ namespace FormularioTeste
             login = txtLogin.Text;
             senha = txtSenha.Text;
             status = cbStatus.Text;
-            tipo = groupBox1.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text;
+            tipo = groupBox1.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text; //PEGAR O RADIOBUTTON SELECIONADO
             data = txtData.Text;
             perfil = groupBox2.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text;
             obs = txtObs.Text;
@@ -45,11 +45,13 @@ namespace FormularioTeste
             
             }
 
-           
 
+            FormUsuario formUsuario = new FormUsuario(login, senha, status, tipo, data, perfil, obs, modulos);
+            formUsuario.Show();
 
-            MessageBox.Show(login + " " + senha + " " + status + "" + tipo + "" + data + "" + perfil + " " + modulos);
+            //MessageBox.Show(login + " " + senha + " " + status + "" + tipo + "" + data + "" + perfil + " " + modulos);
             
         }
+
     }
 }

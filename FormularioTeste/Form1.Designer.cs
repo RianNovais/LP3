@@ -54,6 +54,8 @@
             this.cbAcademico = new System.Windows.Forms.CheckBox();
             this.cbDocumentacao = new System.Windows.Forms.CheckBox();
             this.cbRH = new System.Windows.Forms.CheckBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -140,6 +142,8 @@
             // 
             // txtLogin
             // 
+            this.txtLogin.BackColor = System.Drawing.SystemColors.Window;
+            this.txtLogin.ForeColor = System.Drawing.Color.Black;
             this.txtLogin.Location = new System.Drawing.Point(97, 114);
             this.txtLogin.Name = "txtLogin";
             this.txtLogin.Size = new System.Drawing.Size(126, 23);
@@ -147,13 +151,18 @@
             // 
             // txtSenha
             // 
+            this.txtSenha.BackColor = System.Drawing.SystemColors.Window;
+            this.txtSenha.ForeColor = System.Drawing.Color.Black;
             this.txtSenha.Location = new System.Drawing.Point(97, 147);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(126, 23);
             this.txtSenha.TabIndex = 1;
             // 
             // cbStatus
             // 
+            this.cbStatus.BackColor = System.Drawing.SystemColors.Window;
+            this.cbStatus.ForeColor = System.Drawing.Color.Black;
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
             "Ativo",
@@ -219,6 +228,8 @@
             // 
             // txtData
             // 
+            this.txtData.BackColor = System.Drawing.SystemColors.Window;
+            this.txtData.ForeColor = System.Drawing.Color.Black;
             this.txtData.Location = new System.Drawing.Point(120, 281);
             this.txtData.Name = "txtData";
             this.txtData.Size = new System.Drawing.Size(128, 23);
@@ -258,6 +269,8 @@
             // 
             // txtObs
             // 
+            this.txtObs.BackColor = System.Drawing.SystemColors.Window;
+            this.txtObs.ForeColor = System.Drawing.Color.Black;
             this.txtObs.Location = new System.Drawing.Point(133, 406);
             this.txtObs.Multiline = true;
             this.txtObs.Name = "txtObs";
@@ -314,11 +327,34 @@
             this.cbRH.Text = "Recursos Humanos";
             this.cbRH.UseVisualStyleBackColor = true;
             // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(152, 9);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(303, 30);
+            this.label9.TabIndex = 9;
+            this.label9.Text = "Sistema de Gestão Acadêmica";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.Yellow;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(34, 56);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(438, 25);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 753);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.cbRH);
             this.Controls.Add(this.cbDocumentacao);
             this.Controls.Add(this.cbAcademico);
@@ -340,7 +376,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -379,5 +417,7 @@
         private CheckBox cbAcademico;
         private CheckBox cbDocumentacao;
         private CheckBox cbRH;
+        private Label label9;
+        private Label label10;
     }
 }
