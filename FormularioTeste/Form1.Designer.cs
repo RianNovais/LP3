@@ -56,6 +56,8 @@
             this.cbRH = new System.Windows.Forms.CheckBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.btLimpar = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -162,6 +164,7 @@
             // cbStatus
             // 
             this.cbStatus.BackColor = System.Drawing.SystemColors.Window;
+            this.cbStatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbStatus.ForeColor = System.Drawing.Color.Black;
             this.cbStatus.FormattingEnabled = true;
             this.cbStatus.Items.AddRange(new object[] {
@@ -348,11 +351,33 @@
             this.label10.TabIndex = 10;
             this.label10.Text = "MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO";
             // 
+            // btLimpar
+            // 
+            this.btLimpar.Location = new System.Drawing.Point(422, 708);
+            this.btLimpar.Name = "btLimpar";
+            this.btLimpar.Size = new System.Drawing.Size(75, 23);
+            this.btLimpar.TabIndex = 11;
+            this.btLimpar.Text = "Limpar";
+            this.btLimpar.UseVisualStyleBackColor = true;
+            this.btLimpar.Click += new System.EventHandler(this.btLimpar_Click);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(486, 19);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(130, 20);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Rian Novais - 4TIB";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 753);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.cbRH);
@@ -419,5 +444,7 @@
         private CheckBox cbRH;
         private Label label9;
         private Label label10;
+        private Button btLimpar;
+        private Label label11;
     }
 }

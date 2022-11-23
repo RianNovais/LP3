@@ -53,5 +53,26 @@ namespace FormularioTeste
             
         }
 
+        private void btLimpar_Click(object sender, EventArgs e){
+
+            txtLogin.Clear();
+            txtSenha.Clear();
+            txtData.Clear();
+            txtObs.Clear();
+
+            cbStatus.SelectedIndex = -1;
+            foreach (CheckBox t in mod)
+            {
+                if (t.Checked)
+                {
+                    t.Checked = false;
+                }
+
+            }
+            groupBox1.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked = false);
+            groupBox2.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked = false);
+
+
+        }
     }
 }
