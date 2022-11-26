@@ -44,7 +44,6 @@
             this.radioButtonAluno = new System.Windows.Forms.RadioButton();
             this.radioButtonProfessor = new System.Windows.Forms.RadioButton();
             this.radioButtonTecnico = new System.Windows.Forms.RadioButton();
-            this.txtData = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.radioButtonAdm = new System.Windows.Forms.RadioButton();
             this.radioButtonConvidado = new System.Windows.Forms.RadioButton();
@@ -58,6 +57,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btLimpar = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
+            this.dt_Data = new System.Windows.Forms.DateTimePicker();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -229,15 +229,6 @@
             this.radioButtonTecnico.Text = "Técnico";
             this.radioButtonTecnico.UseVisualStyleBackColor = true;
             // 
-            // txtData
-            // 
-            this.txtData.BackColor = System.Drawing.SystemColors.Window;
-            this.txtData.ForeColor = System.Drawing.Color.Black;
-            this.txtData.Location = new System.Drawing.Point(120, 281);
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(128, 23);
-            this.txtData.TabIndex = 5;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.radioButtonAdm);
@@ -371,11 +362,19 @@
             this.label11.TabIndex = 12;
             this.label11.Text = "Rian Novais - 4TIB";
             // 
+            // dt_Data
+            // 
+            this.dt_Data.Location = new System.Drawing.Point(116, 281);
+            this.dt_Data.Name = "dt_Data";
+            this.dt_Data.Size = new System.Drawing.Size(254, 23);
+            this.dt_Data.TabIndex = 13;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(641, 753);
+            this.Controls.Add(this.dt_Data);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.btLimpar);
             this.Controls.Add(this.label10);
@@ -387,7 +386,6 @@
             this.Controls.Add(this.cbCompras);
             this.Controls.Add(this.txtObs);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.txtData);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.cbStatus);
@@ -402,6 +400,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -432,7 +431,6 @@
         private RadioButton radioButtonAluno;
         private RadioButton radioButtonProfessor;
         private RadioButton radioButtonTecnico;
-        private TextBox txtData;
         private GroupBox groupBox2;
         private RadioButton radioButtonAdm;
         private RadioButton radioButtonConvidado;
@@ -446,5 +444,6 @@
         private Label label10;
         private Button btLimpar;
         private Label label11;
+        private DateTimePicker dt_Data;
     }
 }

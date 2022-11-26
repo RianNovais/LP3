@@ -1,3 +1,5 @@
+using System.Linq.Expressions;
+
 namespace FormularioTeste
 {
     public partial class Form1 : Form
@@ -25,13 +27,32 @@ namespace FormularioTeste
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
+            //TRATAMENTO DE ERROS: NAO DEIXAR OS CAMPOS COM ESPAÇO OU EM BRANCO
+            if (string.IsNullOrEmpty(txtLogin.Text) || (string.IsNullOrEmpty(txtSenha.Text) || (string.IsNullOrEmpty(cbStatus.Text)))){
+
+                MessageBox.Show("NÃO DEIXE CAMPOS EM BRANCO");
+            }
+
+
+
             //COLETANDO DADOS DO FORMULARIOS, INSERIDOS NOS TEXTBOX, RADIOBUTTON, COMBOBOX E CHECKBOX.
+
             login = txtLogin.Text;
             senha = txtSenha.Text;
             status = cbStatus.Text;
-            tipo = groupBox1.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text; //PEGAR O RADIOBUTTON SELECIONADO
-            data = txtData.Text;
-            perfil = groupBox2.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text;
+            data = dt_Data.Text;
+            try{
+                tipo = groupBox1.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text; //PEGAR O RADIOBUTTON SELECIONADO
+                perfil = groupBox2.Controls.OfType<RadioButton>().SingleOrDefault(RadioButton => RadioButton.Checked).Text;
+            }
+            catch(NullReferenceException){
+                MessageBox.Show("ERRO PREENCHA OS BOTÕES ");
+                
+          
+            }
+            
+            //data = txtData.Text;
+            
             obs = txtObs.Text;
 
             modulos = "";
@@ -57,7 +78,6 @@ namespace FormularioTeste
 
             txtLogin.Clear();
             txtSenha.Clear();
-            txtData.Clear();
             txtObs.Clear();
 
             cbStatus.SelectedIndex = -1;
