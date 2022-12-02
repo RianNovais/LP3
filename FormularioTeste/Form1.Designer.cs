@@ -334,11 +334,11 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Yellow;
-            this.label10.Font = new System.Drawing.Font("Segoe UI", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.BackColor = System.Drawing.Color.DarkMagenta;
+            this.label10.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(34, 56);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(438, 25);
+            this.label10.Size = new System.Drawing.Size(480, 28);
             this.label10.TabIndex = 10;
             this.label10.Text = "MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO";
             // 
